@@ -1,3 +1,5 @@
+_site/
+*.orig
 *.gem
 *.rbc
 /.config

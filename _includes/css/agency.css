@@ -243,7 +243,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-brand {
@@ -259,7 +259,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
+    /* border-color: rgba(255,255,255,.02); */
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle {
@@ -268,7 +269,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -352,7 +353,7 @@ header {
 header .intro-text {
     padding-top: 25vh;
     padding-bottom: 50px;
-    text-decoration-color: #F5DCC1;
+    text-decoration-color:#1F1A23;
 
 }
 
