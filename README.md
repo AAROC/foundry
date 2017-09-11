@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AAROC/foundry.svg?branch=master)](https://travis-ci.org/AAROC/foundry)
+
 # foundry
 
 Website for the cloud foundry, with info what it is, how to participate, etc.
