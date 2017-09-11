@@ -7,5 +7,7 @@ color:
 
 # Font Families
 font:
-  primary: '"Raleway", serif'
-  secondary: '"Zilla Slab Highlight",sans-serif'
+  heading: '"Racing Sans One", cursive'
+  text: '"Zilla Slab", serif'
+  code: '"Share Tech Mono", monospace'
+  

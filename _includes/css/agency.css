@@ -17,6 +17,11 @@ html {
   box-sizing: inherit;
 }
 
+.typed-cursor{
+    362	    opacity: 1;
+    363	    -webkit-animation: blink 0.7s infinite;
+}
+
 body {
     position: absolute;
     margin: 0;
@@ -24,7 +29,7 @@ body {
     min-height: 100%;
     width: 100%;
     overflow-x: hidden;
-    font-family: {{ site.data.template.font.secondary}};
+    font-family: {{ site.data.template.font.text }};
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -45,12 +50,13 @@ body {
 }
 
 .text-primary {
-    color: #{{ site.data.template.color.primary }};
+    color: #{{ site.data.template.color.heading }};
 }
 
 p {
     line-height: 1.75;
-	font-size: 110%;
+    font-size: 110%;
+    font-family: {{ site.data.template.font.text}}
 }
 
 p.large {
@@ -83,7 +89,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
+    font-family: {{ site.data.template.font.heading }};
     font-weight: 700;
 }
 
@@ -238,7 +244,7 @@ fieldset[disabled] .btn-xl.active {
 .btn-sm .badge,
 .btn-xl .badge {
     color: #{{ site.data.template.color.primary }};
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .navbar-default {
@@ -293,13 +299,13 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
+    /* color: #fff; */
     background-color: #{{ site.data.template.color.primary }};
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+    /* color: #fff; */
     background-color: #{{ site.data.template.color.secondary }};
 }
 
@@ -339,16 +345,30 @@ header {
     height: 100vh;
     text-align: center;
     color: #fff;
-    
+    /* -webkit-text-stroke: 4px navy;      */
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/assets/img/jakub-skafiriak-567.jpg');
+    background-image: url('{{ site.baseurl }}/todd-quackenbush-701.jpg');
+    /* background-image: url('{{ site.baseurl }}/assets/img/jakub-skafiriak-567.jpg'); */
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    
 }
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top right, #F5DCC1, #6F3B36);
+    opacity: .6;
+  }
+  
 
 header .intro-text {
     padding-top: 25vh;
@@ -359,16 +379,16 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: {{ site.data.template.font.heading }};
     font-size: 22px;
-    font-style: italic;
+    /* font-style: italic; */
     line-height: 22px;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     /* text-transform: uppercase; */
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: {{ site.data.template.font.heading }};
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
@@ -382,16 +402,16 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: {{ site.data.template.font.secondary }};
+        font-family: {{ site.data.template.font.heading }};
         font-size: 40px;
-        font-style: italic;
+        /* font-style: italic; */
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: {{ site.data.template.font.secondary }};
+        font-family: {{ site.data.template.font.heading }};
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
@@ -407,12 +427,13 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+    font-family: {{ site.data.template.font.heading }}
 }
 
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: {{ site.data.template.font.text }};
     font-size: 120%;
     font-style: italic;
     font-weight: 400;
