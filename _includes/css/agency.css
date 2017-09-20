@@ -301,7 +301,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default-color .navbar-toggle .icon-bar {
-    background-color: transparent;
+    background-color: #{{ site.data.template.color.primary}};
     border-color: transparent;
 }
 
