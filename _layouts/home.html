@@ -12,26 +12,38 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                
-                    <!-- <img src="assets/img/icon.svg" /> -->
-                
-                <div class="intro-heading">Cloud Foundry 2017<br></div>
-                <div class="intro-lead-in">25-26 October 2017</div>
+                <img src="assets/img/icon.svg" />
+                <div class="intro-heading">
+                    <div id="typed-title">
+                      <p><strong>Cloud Foundry 2017</strong></p>
+                    </div>
+                        <span id="typed"></span>
+                    </div> <!-- intro-heading -->
+                <div class="intro-lead-in">
+                    25-26 October 2017</div>
                 <div class="intro-lead-in">University of Johannesburg</div>
+                <div class="row">
+                    <div class="intro-lead-in"></div>
+                        <div class="col col-md-4">
+                            <div id="things-title"></div><span id="things"></span>
+                        </div> <!-- col --> 
+                        <div class="col col-md-4">with</div>
+                        <div class="col col-md-4">
+                            <div id="tools-title"></div><span id="tools"></span>
+                        </div> <!-- /col -->
+                    </div>
+                </div> <!-- /row -->
                 <a href="#intro" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
+                <!-- the span has the variable name-->  
+                </div><!-- intro text -->
+            </div> <!-- container-->
     </header>
 
     {% include intro.html %}
     {% include about.html %}
-    <!-- {% include 2017_data/speakers.html %}
-    {% include 2017_data/sponsors.html %}
-    {% include 2017_data/speakers_info.html %}-->
     {% include contact.html %}}
     {% include footer.html %}
     {% include js.html %}
-    
-
+       
     </body>
 </html>

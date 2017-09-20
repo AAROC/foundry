@@ -15,11 +15,40 @@
     <script src="{{ "assets/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "assets/js/classie.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "assets/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{site.baseurl}}/assets/js/typed.min.js"></script>
+    <script src="https://gitcdn.xyz/repo/mattboldt/typed.js/master/lib/typed.js"></script>
+    <script>
+            var typed = new Typed('#typed', {
+              stringsElement: '#typed-title',
+              typeSpeed: 150, 
+              showCursor: true, 
+              cursorChar: '|',
+              autoInsertCss: true
+            });
+
+            var things = new Typed('#things', {
+                typeSpeed: 150,
+                showCursor: true,
+                cursorChar: "_",
+                autoInsertCss: true,
+                startDelay: 1000,
+                strings: ["Building compute platforms","Building application delivery services","Building scientific applications", "Building data repositories", "Building collaboration services", "Building ""Building etc"],
+                shuffle: true,
+                loop: true,
+                fadeOut: true
+            });
+
+            var tools = new Typed('#tools', {
+                typeSpeed: 150,
+                showCursor: true,
+                cursorChar: "_",
+                autoInsertCss: true,
+                startDelay: 1000,
+                strings: ["Ansible","Chef","Puppet","Kubernetes"],
+                shuffle: true,
+                loop: true,
+                fadeOut: true
+            });
+          </script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{ "assets/js/agency.js" | prepend: site.baseurl }}"></script>
-    
-  
-    <!-- Dynamic Typing End  -->
-  
+    <script src="{{ "assets/js/agency.js" | prepend: site.baseurl }}"></script>  
