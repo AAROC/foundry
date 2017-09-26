@@ -36,3 +36,46 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+// $(function(){
+//     $(".themes").typed({
+//         strings: ['What infrastructure is being built?', 'What are the tools of the trade?', 'How are we using the  tools of the trade?', 'What building blocks have been produced?', 'What have we learned by building  infrastructures and building blocks?', 'How re-usable are these building blocks?', 'How can we share what we have learned and built?'],
+//         typeSpeed: Math.floor(Math.random() * (50 - 35)) + 35,  // typing speed can be set as a number or in this formula to randamize 'Math.floor(Math.random() * (max - min)) + min' 
+//         backDelay: 2500, // pause before backspacing
+//         loop: true, // loop on or off (true or false)
+//         loopCount: false, // number of loops, false = infinite
+//     });
+// });
+// var themes = new Typed('#themes', {
+//                 stringsElement: '#themes',
+//                 typeSpeed: 150, 
+//                 showCursor: true, 
+//                 cursorChar: '|',
+//                 autoInsertCss: true,
+//                 strings: ['What infrastructure is being built?', 'What are the tools of the trade?', 'How are we using the  tools of the trade?', 'What building blocks have been produced?', 'What have we learned by building  infrastructures and building blocks?', 'How re-usable are these building blocks?', 'How can we share what we have learned and built?']
+// });
+
+
+// var things = new Typed('#things', {
+//     typeSpeed: 150,
+//     showCursor: true,
+//     cursorChar: "_",
+//     autoInsertCss: true,
+//     startDelay: 1000,
+//     strings: ["Building compute platforms","Building application delivery services","Building scientific applications", "Building data repositories", "Building collaboration services", "Building ", "Building etc"],
+//     shuffle: true,
+//     loop: true,
+//     fadeOut: true
+// });
+
+// var tools = new Typed('#tools', {
+//     typeSpeed: 150,
+//     showCursor: true,
+//     cursorChar: "_",
+//     autoInsertCss: true,
+//     startDelay: 1000,
+//     strings: ["Ansible","Chef","Puppet","Kubernetes"],
+//     shuffle: true,
+//     loop: true,
+//     fadeOut: true
+// });

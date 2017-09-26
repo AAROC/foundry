@@ -1,78 +1,79 @@
-    <!-- About Section -->
-    <section id="about">
-            <!-- <div class="typed_wrap">
-                    <h1>We Are <span class="typed"></span></h1>
-                </div> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h2 class="section-subheading text-muted">General workshop information</h2>
-                </div>
-            </div>
-            <div class="row">
-             <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h2>Themes</h2>
-                                </div>
-                                <div class="timeline-heading">
-                                    <p class="text-muted">The workshop will address the themes of building and operating e-science platforms. </p>
-                                </div>
-                                <a href="/about-the-workshop" class="page-scroll btn btn-sm">More</a>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h2>Agenda</h2>
-                                </div>
-                                <div class="timeline-heading">
-                                    <p class="text-muted">The agenda and timetable are linked below.</p>
-                                </div>
-                                <a href="https://agenda.ct.infn.it" class="page-scroll btn btn-sm">Learn More</a>
-                            </div>
-                        </li>
-                        <!-- <li>
-                            
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h2>Team</h2>
-                                </div>
-                                <div class="timeline-heading">
-                                    <p class="text-muted">Find out the team members</p>
-                                </div>
-                                <a href="/team" class="page-scroll btn btn-sm">Learn More</a>
-                            </div>
-                        </li>  -->
-                         <li class="timeline">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h2>Venue</h2>
-                                </div>
-                                <div class="timeline-heading">
-                                    <p class="text-muted">The venue will be on the campus of the University of Johannesburg, Bunting Road Campus. Click below for more details.</p>
-                                </div>
-                                <a href="/venue" class="page-scroll btn btn-sm">Learn More</a>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h2>Discussion</h2>
-                                </div>
-                                <div class="timeline-heading">
-                                    <p class="text-muted">Have a Question? Come to the forum to discuss anything related to the event, themes or other.</p>
-                                </div>
-                                <a href="https://discourse.sci-gaia.eu" class="page-scroll btn btn-sm">Take me to the discussion forum</a>
-                            </div>
-                        </li> 
-                         
-                    </ul>
-                </div>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About</h2>
+                <h2 class="section-subheading text-muted">General workshop information</h2>
             </div>
         </div>
-    </section>
+
+
+        <div classs="row">
+            <div class="col-lg-12 text-center">
+                <a class="btn btn-xl" href="#"><i class="fa fa-user-plus"></i> Register</a>
+                <a class="btn btn-xl" href="#discussion"><i class="fa fa-comments-o"></i> Discuss</a>
+                <a class="btn btn-xl" href="venue"><i class="fa fa-map"></i> Venue</a>
+            </div>
+        </div> <!-- event links -->
+
+        <div class="row">
+            <div class="col-lg-12">
+            <ul class="timeline">
+                <li class="timeline">
+                    <div class="timeline-image">
+                        <img class="img img-circle" src="{{ 'assets/img/noun_898937_cc.png' | absolute_url }}">
+                    </div>                                
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h2>Background</h2>
+                            <p class="text-muted">The workshop will focus on themes and experience in building e-Infrastructure. Short presentations by members of the community on specific topics or tools, as well as discussion sessions will be held.</p>
+                            <a href="/about-the-workshop/" class="page-scroll btn btn-sm">More</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                        <div class="timeline-image-inverted">
+                                <img src="{{ 'assets/img/noun_898937_cc.png' | absolute_url }}">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h2>Registration and Agenda</h2>
+                        </div>
+                        <p class="text-muted">Registration, submission and the agenda are handled by Indico. The link below will take you to the event page</p>
+                        
+                        <a href="https://agenda.ct.infn.it" class="page-scroll btn btn-sm">Learn More</a>
+                    </div>
+                </li>
+                <li class="timeline">
+                    <div class="timeline-image">
+                    
+                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.2925202321985!2d28.009999315081494!3d-26.187160983445377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDExJzEzLjgiUyAyOMKwMDAnNDMuOSJF!5e0!3m2!1sen!2sza!4v1505902622049"><i class="fa fa-map-marker"></i></a>
+                        
+                    </div>                                
+                    <div class="timeline-panel" id="venue">
+                        <div class="timeline-heading">
+                            <h2>Venue</h2>
+                        </div>
+                        <div class="timeline-heading">
+                            <p class="text-muted">The venue will be on the campus of the University of Johannesburg, Bunting Road Campus. Click below for more details.</p>
+                        </div>
+                        <a href="#venue" class="page-scroll btn btn-sm">Learn More</a>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-panel">
+                        <div id="discussion" class="timeline-heading">
+                            <h2>Discussion</h2>
+                        </div>
+                        <div class="timeline-heading">
+                            <p class="text-muted">Have a Question? Come to the forum to discuss anything related to the event, themes or other.</p>
+                        </div>
+                        <a href="https://discourse.sci-gaia.eu" class="page-scroll btn btn-sm">Take me to the discussion forum</a>
+                    </div>
+                </li> 
+                    
+            </ul>
+            </div> <!-- col --> 
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>

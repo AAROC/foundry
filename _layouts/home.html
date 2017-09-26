@@ -2,11 +2,10 @@
 <html>
 
   {% include head.html %}
-
-
+  
     <body id="page-top" class="index">
 
-    {% include header.html %}
+  {% include header-home.html %}
 
     <!-- Header -->
     <header>
@@ -14,26 +13,16 @@
             <div class="intro-text">
                 <img src="assets/img/icon.svg" />
                 <div class="intro-heading">
-                    <div id="typed-title">
-                      <p><strong>Cloud Foundry 2017</strong></p>
-                    </div>
-                        <span id="typed"></span>
-                    </div> <!-- intro-heading -->
+                    {{ site.data.event.event_title }}
+                </div> <!-- intro-heading -->
                 <div class="intro-lead-in">
-                    25-26 October 2017</div>
-                <div class="intro-lead-in">University of Johannesburg</div>
-                <!-- <div class="row">
-                    <div class="intro-lead-in"></div>
-                        <div class="col col-md-4">
-                            <div id="things-title"></div><span id="things"></span>
-                        </div> 
-                        <div class="col col-md-4">with</div>
-                        <div class="col col-md-4">
-                            <div id="tools-title"></div><span id="tools"></span>
-                        </div> 
-                    </div>
-                </div> -->
-                <a href="#intro" class="page-scroll btn btn-xl">Tell Me More</a>
+                        25-26 October 2017<br>
+                    {{ site.data.event.host }}</div>
+                    <div class="intro-lead-in typed-title">
+                    <span class="typed-title"></span>
+                </div>
+                    <a href="#intro" class="page-scroll btn btn-xl">What is this ?</a>
+                <a href="#about" class="page-scroll btn btn-xl">Count me in</a>
                 <!-- the span has the variable name-->  
                 </div><!-- intro text -->
             </div> <!-- container-->
@@ -43,7 +32,5 @@
     {% include about.html %}
     {% include contact.html %}}
     {% include footer.html %}
-    {% include js.html %}
-       
     </body>
 </html>

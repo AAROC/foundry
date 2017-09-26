@@ -1,10 +1,18 @@
 ---
 # Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 6F3B36
-  secondary: D69859   
-  secondary-dark: 1F1A23
-  muted: 777
+# color:
+#   primary: D69859  
+#   secondary: 6F3B36 
+#   secondary-dark: 1F1A23
+#   muted: 777
+cover-image: christopher-burns-368617.jpg
+
+color: 
+  primary: 0B1B23
+  secondary: C5C1C3
+  secondary-dark: 91A0AF
+  muted: 7E605A
+  shadow: C67A39
 
 # Font Families
 font:

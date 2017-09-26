@@ -1,54 +1,15 @@
-    <!-- jQuery Version 1.11.0 -->
-    <script src="{{ "assets/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="{{ "assets/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "assets/js/classie.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "assets/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
-    <script src="https://gitcdn.xyz/repo/mattboldt/typed.js/master/lib/typed.js"></script>
-    <script>
-            var typed = new Typed('#typed', {
-              stringsElement: '#typed-title',
-              typeSpeed: 150, 
-              showCursor: true, 
-              cursorChar: '|',
-              autoInsertCss: true
-            });
-
-            var things = new Typed('#things', {
-                typeSpeed: 150,
-                showCursor: true,
-                cursorChar: "_",
-                autoInsertCss: true,
-                startDelay: 1000,
-                strings: ["Building compute platforms","Building application delivery services","Building scientific applications", "Building data repositories", "Building collaboration services", "Building ", "Building etc"],
-                shuffle: true,
-                loop: true,
-                fadeOut: true
-            });
-
-            var tools = new Typed('#tools', {
-                typeSpeed: 150,
-                showCursor: true,
-                cursorChar: "_",
-                autoInsertCss: true,
-                startDelay: 1000,
-                strings: ["Ansible","Chef","Puppet","Kubernetes"],
-                shuffle: true,
-                loop: true,
-                fadeOut: true
-            });
-          </script>
+<!-- jQuery Version 1.11.0 -->
+<!-- typed title --> 
+<script>
+    var typed = new Typed('typed-title', {
+        stringsElement: '#typed-title',
+        typeSpeed: 150, 
+        showCursor: true, 
+        cursorChar: '_',
+        loop: true,
+        strings: ['<code>magic install cloud</code>', '<code>yum install container-platform</code>','<code>install black-magic</code>','ansible-playbook -i all-the-sites EpicCloud.yml', 'echo "now what !?"']
+});
+</script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{ "assets/js/agency.js" | prepend: site.baseurl }}"></script>  
+<script src="{{ "assets/js/agency.js" | absolute_url }}"></script>  

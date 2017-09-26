@@ -1,8 +1,8 @@
 title: Cloud Foundry
 description: > # this means to ignore newlines until "baseurl:"
   We built this city on DevOps and toil
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "foundry.africa-grid.org" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "/" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
@@ -10,7 +10,6 @@ logo: "assets/img/icon.svg"
 
 google_site_verification: googleXXXXXXXXXXXXXXXX.html
 
-include: ['_2016_pages', '_2017_pages']
 
 plugins:
   - jekyll-sitemap

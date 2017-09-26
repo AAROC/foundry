@@ -4,32 +4,31 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    {% seo %}
-
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-     -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style/style.css">
-    <script src="https://use.fontawesome.com/b0766ba693.js"></script>
-    <script src="{{ site.baseurl}}/assets/js/typed.js"></script>
-    <!--Google Analytics SCRIPT-->
-    
-    <!--Google Analytics SCRIPT END-->
-
-    <!--Remove image dragging -->
-    <BODY ondragstart="return false;" ondrop="return false;">
-
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Racing+Sans+One|Zilla+Slab:400,400i,700,700i" rel="stylesheet">
+    {% seo %}
+
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/css/style/style.css' | absolute_url }}">
+
+    <script src="{{ '/assets/js/jquery-1.11.0.js' | absolute_url }}"></script>
+    <script src="{{ '/assets/js/jquery.easing.min.js' | absolute_url  }}"></script>
+    <script src="{{ '/assets/js/classie.js' | absolute_url }}"></script>
+    <script src="{{ '/assets/js/cbpAnimatedHeader.js' | absolute_url }}"></script>
+    <script src="{{ '/assets/js/typed.js' | absolute_url }}"></script>
+    <script src="https://use.fontawesome.com/b0766ba693.js"></script>
     
-    <!-- WEBSITE ICON IN BROWSER -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="icon" type="image/svg" href="/assets/img/icon.svg">
-
-    
-
+    {% include js.html %}
+    <!--Remove image dragging -->
+    <BODY ondragstart="return false;" ondrop="return false;">
+    <!-- WEBSITE ICON IN BROWSER -->
 </head>
