@@ -300,6 +300,16 @@ fieldset[disabled] .btn-xl.active {
     border-color: transparent;
 }
 
+.navbar-page-color .nav li a {
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.heading }};
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #{{ site.data.template.color.primary}};
+    border-color: transparent;
+}
+
+
 .navbar-default-color .nav li a:hover,
 .navbar-default-color .nav li a:focus {
     outline: 0;
