@@ -476,7 +476,7 @@ section h3.section-subheading {
 
 .timeline>li {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     min-height: 50px;
 }
 
@@ -576,7 +576,7 @@ section h3.section-subheading {
     }
 
     .timeline>li {
-        margin-bottom: 100px;
+        margin-bottom: -15px;
         min-height: 100px;
     }
 
@@ -649,7 +649,7 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 40px;
+        margin-top: -20px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -662,7 +662,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    background-color: #{{site.data.template.color.primary}};
     {% comment %}
     background-image: url('{{ '/assets/img/out.jpg' | absolute_url }}');
     {% endcomment %}
