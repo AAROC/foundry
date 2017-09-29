@@ -16,7 +16,7 @@ color:
 
 # Font Families
 font:
-  heading: '"Racing Sans One", cursive'
+  heading: '"BioRhyme", serif'
   text: '"Zilla Slab", serif'
   code: '"Share Tech Mono", monospace'
   

@@ -10,3 +10,5 @@ layout: default
 <h3>Themes</h3>
 <div class="themes"></div>
 <span class="themes"></span>
+
+<h3>Patterns</h3>
