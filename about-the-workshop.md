@@ -20,7 +20,7 @@ published: true
 
 <section id="more">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <h2 class="intro-text">Why are we doing this ?</h2>
 
             <h3>Better together</h3>
@@ -45,10 +45,12 @@ published: true
 
 
 <section id="themes">
-    <div class="container">
-        <div class="row">
+    <div class="container text-center">
+        <div class="row justify-content-center">
         <h3 class="intro-text">Themes</h3>
-            <div class="col col-md-6">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-md-3 mx-auto text-center">
                 <div class="card" style="width: 20rem;">
                     <img class="card-img-top" style="height: 100px;" src="{{'assets/img/interop.svg' | absolute_url }}" alt="Card image cap">
                     <div class="card-body">
@@ -58,7 +60,7 @@ published: true
                     </div>
                 </div>
             </div>
-            <div class="col col-md-6">
+            <div class="col col-md-3 mx-auto text-center">
                 <div class="card" style="width: 20rem;">
                     <img class="card-img-top" style="height: 100px;"  src="{{'assets/img/reuse.svg' | absolute_url }} " alt="Card image cap">
                     <div class="card-body"> 
@@ -68,9 +70,7 @@ published: true
                     </div>
                 </div>
             </div>
-        </div> <!-- row -->
-        <div class="row">
-            <div class="col col-md-6">
+            <div class="col col-md-3 mx-auto text-center">
                 <div class="card" style="width: 20rem;">
                     <img class="card-img-top" src="{{ 'assets/img/rie.svg' | absolute_url }}" style="height: 100px;" alt="Card image cap">
                     <div class="card-body">
@@ -80,12 +80,12 @@ published: true
                     </div>
                 </div>
             </div>
-            <div class="col col-md-6">
+            <div class="col col-md-3 mx-auto text-center">
                 <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" src="{{ 'assets/img/design_pattern.svg' | absolute_url }}" style="height: 100px;" alt="Card image cap">
+                        <a href="#patterns" class="page-scroll"><img class="card-img-top" src="{{ 'assets/img/design_pattern.svg' | absolute_url }}" style="height: 100px;" alt="Card image cap"></a>
                     <div class="card-body">
                         <h4 class="card-title">Patterns</h4>
-                        <p class="card-text">Emerging Patterns</p>
+                        <p class="card-text">Can we identify emerging patterns in how infrastructure is developed, provisioned, operated and shared? What are these patterns? Where and how do they apply?</p>
                         <a href="http://discourse.sci-gaia.eu/?new-topic" class="page-scroll btn btn-sm-1">Discuss</a>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ published: true
 
 <section id="patterns">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <h3 class="intro-text">Patterns</h3>
             <p>The age of static recipes and cookbooks is over. We are building <strong>ever-more complex ecosystems</strong>. It is hoped that talking about <em>what</em> you built and <em>how</em> will emerge patterns that we may be able to point to and say "we tried this, it may work in the following conditons..."</p>
     
@@ -108,29 +108,41 @@ published: true
                     <img class="card-img-top" src="{{ 'assets/img/infra_as_code.svg' | absolute_url }}" style="height: 100px;" alt="Infrastructure as Code">
                     <div class="card-body">
                         <h4 class="card-body">X As Code</h4>
-                        <p class="card-text">Infrastructure as Code (<em>everything as code</em>, Executable Infrastructure</p>
+                        <p class="card-text">Infrastructure as Code (<em>everything as code</em>), Executable Infrastructure, Softwared-Defined Infrastructure</p>
                         <a href="http://discourse.sci-gaia.eu/?new-topic" class="page-scroll btn btn-sm-1">Discuss</a>
                     </div>
                 </div>
             </div>
-    <div class="col col-sm-4">
-        <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="{{ 'assets/img/alt-ci-cd.svg' | absolute_url }}" style="height: 100px;" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-body">CI/CD</h4>
-                <p class="card-text">Continuous Integration and Delivery, Test-Driven Development</p>
-                <a href="http://discourse.sci-gaia.eu/?new-topic" class="page-scroll btn btn-sm-1">Discuss</a>
+            <div class="col col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{{ 'assets/img/alt-ci-cd.svg' | absolute_url }}" style="height: 100px;" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-body">CI/CD</h4>
+                        <p class="card-text">Continuous Integration and Delivery, Test-Driven Development</p>
+                        <a href="http://discourse.sci-gaia.eu/?new-topic" class="page-scroll btn btn-sm-1">Discuss</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{{ 'assets/img/ai.svg' | absolute_url }}" style="height: 100px;" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-body">Automation</h4>
+                        <p class="card-text">Frictionless infrastructure, automation, intelligent agents</p>
+                        <a href="http://discourse.sci-gaia.eu/?new-topic" class="page-scroll btn btn-sm-1">Discuss</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col col-sm-4">
-        <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="{{ 'assets/img/ai.svg' | absolute_url }}" style="height: 100px;" alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-body">Automation</h4>
-                <p class="card-text">Frictionless infrastructure, automation, intelligent agents</p>
-                <a href="http://discourse.sci-gaia.eu/?new-topic" class="page-scroll btn btn-sm-1">Discuss</a>
-            </div>
+        <div class="row justify-content-center">
+                <div class="card">
+                        <img class="card-img-top text-center" src="{{ 'assets/img/unknown.svg' | absolute_url }}" style="height: 100px;" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-body">The Unknown</h4>
+                            <p class="card-text">New Technologies, Prototypes, Usage Models - what is coming down the line?</p>
+                            <a href="http://discourse.sci-gaia.eu/?new-topic" class="page-scroll btn btn-sm-1">Discuss</a>
+                        </div>
+                    </div>
         </div>
     </div>
-</div>
+</section>
