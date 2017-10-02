@@ -50,7 +50,7 @@ body {
 
 p {
     line-height: 1.75;
-    font-size: 200%;
+    font-size: 170%;
     font-family: {{ site.data.template.font.text }};
 }
 
@@ -86,6 +86,7 @@ h6 {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.heading }};
     font-weight: 700;
+    color: #{{ site.data.template.color.primary}};
 }
 
 .img-centered {
@@ -244,6 +245,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: transparent;
     background-image: none;
     background-repeat: no-repeat;
+    border: none;
 }
 
 .navbar-default .navbar-brand {
@@ -309,7 +311,6 @@ fieldset[disabled] .btn-xl.active {
     border-color: transparent;
 }
 
-
 .navbar-default-color .nav li a:hover,
 .navbar-default-color .nav li a:focus {
     outline: 0;
@@ -330,11 +331,12 @@ fieldset[disabled] .btn-xl.active {
 
 @media(min-width:768px) {
     .navbar-default-color {
-        padding: 25px 0;
+        /* padding: 25px 0; */
         background-color: transparent;
         border-color: transparent;
         border-bottom-color: transparent;
         color: transparent;
+        border: none;
     }
     .navbar-default {
         border: 0;
@@ -361,11 +363,15 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: #{{ site.data.template.color.primary }};
+        color: white;
     }
-
+    
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
         background-color: #{{ site.data.template.color.primary }};
+    }
+    .navbar-default .navbar-shrink .ul .li .a .page-scroll {
+        color: white;
     }
 }
 
@@ -568,6 +574,7 @@ section h3.section-subheading {
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
     margin-bottom: 0;
+    font-size: 20;
 }
 
 @media(min-width:768px) {

@@ -28,7 +28,14 @@ var cbpAnimatedHeader = (function() {
 		var sy = scrollY();
 		header = document.querySelector( '.navbar-fixed-top' );		
 		if ( sy >= changeHeaderOn ) {
+			console.log('shrinking that shit');
 			classie.add( header, 'navbar-shrink' );
+			// document.querySelector("#bs-example-navbar-collapse-1, page-scroll").style.color = "white";			
+			var links = document.querySelectorAll('navbar-right, nav, navbar-nav, navbar-right, li, a, page-scroll');
+			var i;
+			for (i = 0; i < links.length; i++) {
+				links[i].style.color = "white";
+			}
 		}
 		else {
 			classie.remove( header, 'navbar-shrink' );
