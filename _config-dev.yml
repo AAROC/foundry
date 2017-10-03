@@ -17,10 +17,10 @@ plugins:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: facebook
-    url: https://www.facebook.com
-  - title: twitter
-    url: https://twitter.com
+  - title: github
+    url: https://github.com/AAROC/foundry
+  - title: comments-o
+    url: http://discourse.sci-gaia.eu
 
 # Build settings
 markdown: kramdown
