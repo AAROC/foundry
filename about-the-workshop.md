@@ -25,7 +25,7 @@ published: true
 
             <h3>Better together</h3>
 
-            <p>There is a need for better <strong>collaboration</strong> between the architects of infrastructure. This is an open-ended, nonpartisan event.</p>
+            <p>There is a need for better <strong>collaboration</strong> between the architects of infrastructure. This is an open-ended, nonpartisan event. Wave any flag you want to.</p>
 
             <h3>Evolution</h3>
 
