@@ -3,6 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
   We built this city on DevOps and toil
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://foundry.africa-grid.org" # the base hostname & protocol for your site
+exclude: [test.md, todo.md, using.md, ideas, contributions.md, agenda.md]
 # Build settings
 markdown: kramdown
 

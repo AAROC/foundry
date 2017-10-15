@@ -5,9 +5,9 @@
             <div class="col col-lg-12 text-center">
                 <h2 class="section-heading">About</h2>
                 <h2 class="section-subheading text-muted">General workshop information</h2>
-                <a class="btn btn-xl" href="{{ site.data.event.registration_link }}"><i class="fa fa-user-plus"></i> Register</a>
+                <a class="btn btn-xl" href="{{ site.data.event.registration_link }}"><i class="fa fa-user-plus"></i> Register <i class="fa fa-external-link"></i> </a>
                 <a class="btn btn-xl page-scroll" href="#discussion"><i class="fa fa-comments-o"></i> Discuss</a>
-                <a class="btn btn-xl" href="venue"><i class="fa fa-map"></i> Venue</a>
+                <a class="btn btn-xl" href="#venue"><i class="fa fa-map"></i> Venue</a>
             </div>
         </div>
 
@@ -15,28 +15,28 @@
             <div class="col col-lg-12">
                 <ul class="timeline">
                     <li class="timeline">
-                        <img class="img img-circle timeline-image" src="{{ 'assets/img/background.svg' | absolute_url }}" />
+                        <img class="img img-circle timeline-image" src="{{ 'assets/img/background.svg' | absolute_url }}" alt="background to the event"/>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h2>Background</h2>
                                 <p class="text-muted">The workshop will focus on themes and experience in building e-Infrastructure. Short presentations by members of the community on specific topics or tools, as well as discussion sessions will be held.</p>
-                                <a href="/background" class="page-scroll btn btn-sm">More</a>
+                                <a href="{{/background | absolute_url }}" class="page-scroll btn btn-sm">More</a>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                            <img class="img img-circle timeline-image" src="{{ 'assets/img/agenda.svg' | absolute_url }}" />
+                            <img class="img img-circle timeline-image" src="{{ 'assets/img/agenda.svg' | absolute_url }}" alt="Workshop agenda details" />
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                             <h2>Registration and Agenda</h2>
                         </div>
                         <p class="text-muted">Registration is free of charge - just fill in the form and attend. Registration, submission and the agenda are handled by Indico. The link below will take you to the event page. The agenda is under preparation</p>
                         
-                        <a href="https://agenda.ct.infn.it" class="page-scroll btn btn-sm">Learn More</a><a href="#contact" class="page-scroll btn btn-sm">Pitch a talk</a>
+                        <a href="https://agenda.ct.infn.it" class="page-scroll btn btn-sm">Learn More</a> <a href="{{#contact| site.url}}" class="page-scroll btn btn-sm">Pitch a talk</a>
                     </div>
                 </li>
                 <li class="timeline">
-                    <img class="img img-circle img-centered image-timeline" src="{{ 'assets/img/icon.svg' | absolute_url }}">
+                    <img class="img img-circle img-centered image-timeline" src="{{ 'assets/img/icon.svg' | absolute_url }}" alt="Venue information">
                     <div class="timeline-panel" id="venue">
                         <div class="timeline-heading">
                             <h2>Venue</h2>
@@ -44,19 +44,19 @@
                         <div class="timeline-heading">
                             <p class="text-muted">The venue will be on the campus of the University of Johannesburg, Bunting Road Campus. Click below for more details.</p>
                         </div>
-                        <a href="{{ '/venue/' | absolute_url }}" class="page-scroll btn btn-sm">Venue details</a>
+                        <a href="{{ '/venue' | absolute_url }}" class="page-scroll btn btn-sm">Venue details</a>
                     </div>
                 </li>
-                <li class="timeline-inverted" id="discussion">
-                    <img class="img img-circle timeline-image" src="{{ 'assets/img/discussion.svg' | absolute_url }}" />
-                    <div class="timeline-panel">
+                <li class="timeline-inverted">
+                    <img class="img img-circle timeline-image" src="{{ 'assets/img/discussion.svg' | absolute_url }}" alt="Get involved in the discussion"/>
+                    <div class="timeline-panel" id="discussion">
                         <div class="timeline-heading">
                             <h2>Discussion</h2>
                         </div>
                         <div class="timeline-heading">
                             <p class="text-muted">Have a Question? Come to the forum to discuss anything related to the event, themes or other.</p>
                         </div>
-                        <a href="https://discourse.sci-gaia.eu/new-topiccategory=DevOps&tags=event" class="page-scroll btn btn-sm">Start a discussion topic</a>
+                        <a href="https://discourse.sci-gaia.eu/new-topic?category=commons&tags=foundry" target="_blank" class="page-scroll btn btn-sm">Start a discussion topic</a>
                     </div>
                 </li>     
             </ul>

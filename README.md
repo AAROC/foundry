@@ -54,4 +54,3 @@ This website uses the following javascript libraries :
   - fontawesome
   - typed
   - jquery
-  - 
