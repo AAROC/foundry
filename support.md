@@ -23,7 +23,7 @@ Cloud Foundry is graciously supported by the contributions of
     {% for col in (start..end) %}
     <div class="col col-md-{{ div_size }}">
     <h2>{{ site.data.event.supporters[col].name}}</h2>
-    <img src="{{site.url}}/assets/img/{{site.data.event.supporters[col].logo}}" class="rounded mx-auto d-block timeline-image img-fluid " style="max-width: 100%; height: auto;" alt="{{ site.data.event.supporters[col].description}}">
+    <img src="{{site.url}}/assets/img/{{site.data.event.supporters[col].logo}}" class="rounded mx-auto d-block timeline-image img-fluid " style="max-width: auto; max-height: 100px;" alt="{{ site.data.event.supporters[col].description}}">
     <p>{{ site.data.event.supporters[col].description}}</p>
     </div>
     {% endfor %}
