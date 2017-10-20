@@ -9,3 +9,10 @@ venue: |
         Bryanston
 agenda_link: https://agenda.ct.infn.it/event/1299/
 registration_link: https://agenda.ct.infn.it/event/1299/registration/register
+supporters:
+- name: DIRISA
+  description: Data-Intensive Research Initiative for South Africa
+  logo: dirisaLogoLight.png
+- name: Microsoft 
+  description: Microsoft South Africa
+  logo: microsoft.png
